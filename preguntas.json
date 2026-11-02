@@ -1,0 +1,98 @@
+[
+  {
+    "pregunta": "¿Cuál es la función principal del sistema nervioso?",
+    "opciones": [
+      { "texto": "Permitir reaccionar a estímulos internos y externos.", "correcta": true, "explicacion": "¡Correcto! El sistema nervioso capta estímulos y elabora respuestas para adaptarnos al medio." },
+      { "texto": "Producir todas las hormonas del organismo.", "correcta": false, "explicacion": "Esa función corresponde principalmente al sistema endocrino." },
+      { "texto": "Transportar oxígeno a las células.", "correcta": false, "explicacion": "El transporte de oxígeno es tarea del aparato circulatorio y la sangre." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué células transmiten los impulsos nerviosos?",
+    "opciones": [
+      { "texto": "Neuronas.", "correcta": true, "explicacion": "¡Correcto! Las neuronas son las unidades funcionales encargadas de conducir los impulsos eléctricos." },
+      { "texto": "Células de la neuroglía.", "correcta": false, "explicacion": "La neuroglía tiene funciones de soporte, nutrición y protección, pero no de transmisión principal." },
+      { "texto": "Células musculares.", "correcta": false, "explicacion": "Las células musculares tienen capacidad contráctil." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué parte de la neurona recibe y conduce el impulso hacia el cuerpo celular?",
+    "opciones": [
+      { "texto": "Las dendritas.", "correcta": true, "explicacion": "¡Correcto! Las dendritas actúan como antenas receptoras que llevan el impulso hacia el soma." },
+      { "texto": "El axón.", "correcta": false, "explicacion": "El axón conduce el impulso alejándolo del cuerpo celular." },
+      { "texto": "La mielina.", "correcta": false, "explicacion": "La mielina es la capa aislante que envuelve el axón." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué estructuras forman el sistema nervioso central (SNC)?",
+    "opciones": [
+      { "texto": "Encéfalo y médula espinal.", "correcta": true, "explicacion": "¡Correcto! El SNC está compuesto estrictamente por el encéfalo y la médula espinal." },
+      { "texto": "Nervios craneales y espinales.", "correcta": false, "explicacion": "Esos nervios forman parte del Sistema Nervioso Periférico (SNP)." },
+      { "texto": "Músculos y glándulas.", "correcta": false, "explicacion": "Son los órganos efectores que ejecutan las respuestas." }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capa más externa de las meninges?",
+    "opciones": [
+      { "texto": "Duramadre.", "correcta": true, "explicacion": "¡Correcto! La duramadre es la membrana fibrosa más externa y resistente." },
+      { "texto": "Aracnoides.", "correcta": false, "explicacion": "La aracnoides es la capa intermedia." },
+      { "texto": "Piamadre.", "correcta": false, "explicacion": "La piamadre es la capa más interna y delicada." }
+    ]
+  },
+  {
+    "pregunta": "¿Dónde se encuentra la mayor parte del líquido cefalorraquídeo (LCR)?",
+    "opciones": [
+      { "texto": "En el espacio subaracnoideo.", "correcta": true, "explicacion": "¡Correcto! El LCR circula por los ventrículos cerebrales y el espacio subaracnoideo." },
+      { "texto": "En el espacio epidural.", "correcta": false, "explicacion": "El espacio epidural se sitúa por fuera de la duramadre." },
+      { "texto": "Dentro de la duramadre.", "correcta": false, "explicacion": "No se acumula en el espesor de la membrana." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué estructura participa en la coordinación de los movimientos de forma inconsciente?",
+    "opciones": [
+      { "texto": "El cerebelo.", "correcta": true, "explicacion": "¡Correcto! El cerebelo regula el equilibrio y la coordinación motora fina de manera inconsciente." },
+      { "texto": "El tálamo.", "correcta": false, "explicacion": "El tálamo actúa como estación de relevo de señales sensoriales." },
+      { "texto": "La hipófisis.", "correcta": false, "explicacion": "La hipófisis es una glándula endocrina reguladora." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué estructura segrega melatonina según los apuntes?",
+    "opciones": [
+      { "texto": "Glándula pineal.", "correcta": true, "explicacion": "¡Correcto! La glándula pineal (situada en el epitálamo) produce melatonina para regular los ciclos de sueño." },
+      { "texto": "Hipófisis.", "correcta": false, "explicacion": "La hipófisis segrega hormonas trópicas y de crecimiento." },
+      { "texto": "Cerebelo.", "correcta": false, "explicacion": "El cerebelo coordina el movimiento." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué prueba se utiliza especialmente en situaciones de emergencia y para valorar lesiones óseas?",
+    "opciones": [
+      { "texto": "Tomografía computarizada (TC).", "correcta": true, "explicacion": "¡Correcto! La TC es rápida y excelente para evaluar traumatismos y hueso en urgencias." },
+      { "texto": "Resonancia magnética.", "correcta": false, "explicacion": "Requiere más tiempo de exploración." },
+      { "texto": "Electroencefalograma.", "correcta": false, "explicacion": "Mide la actividad eléctrica cerebral." }
+    ]
+  },
+  {
+    "pregunta": "¿Cuántos pares de nervios craneales hay?",
+    "opciones": [
+      { "texto": "12 pares.", "correcta": true, "explicacion": "¡Correcto! Son 12 pares que emergen directamente del encéfalo." },
+      { "texto": "31 pares.", "correcta": false, "explicacion": "31 pares corresponden a los nervios espinales o raquídeos." },
+      { "texto": "8 pares.", "correcta": false, "explicacion": "Esa cifra no coincide con los pares craneales totales." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué división del sistema nervioso autónomo prepara al organismo para la lucha o huida?",
+    "opciones": [
+      { "texto": "Simpático.", "correcta": true, "explicacion": "¡Correcto! El sistema simpático activa al organismo ante situaciones de estrés o alerta." },
+      { "texto": "Parasimpático.", "correcta": false, "explicacion": "El parasimpático se encarga del reposo y la relajación." },
+      { "texto": "Somático.", "correcta": false, "explicacion": "El sistema somático controla los músculos esqueléticos voluntarios." }
+    ]
+  },
+  {
+    "pregunta": "¿Qué prueba de imagen utiliza campos magnéticos para obtener imágenes detalladas?",
+    "opciones": [
+      { "texto": "Resonancia magnética.", "correcta": true, "explicacion": "¡Correcto! La resonancia magnética emplea potentes campos magnéticos y ondas de radio." },
+      { "texto": "Electroencefalograma.", "correcta": false, "explicacion": "Registra impulsos eléctricos cerebrales mediante electrodos." },
+      { "texto": "Examen neurológico.", "correcta": false, "explicacion": "Es una exploración clínica física y mental." }
+    ]
+  }
+]
