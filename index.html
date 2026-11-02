@@ -275,6 +275,27 @@
       </div>
     </section>
 
+    <!-- ================= VISTA 3: PANTALLA DE RESULTADOS FINAL ================= -->
+    <section id="view-results" class="hidden h-full flex flex-col justify-between items-center text-center py-3">
+      <header>
+        <h2 class="text-base sm:text-xl neon-yellow font-arcade tracking-wider">RESULTADOS DEL RETO</h2>
+      </header>
+
+      <div class="my-auto p-4 bg-purple-950 border-4 border-cyan-400 rounded-lg shadow-[0_0_25px_#00f6ff] max-w-md w-full">
+        <div id="result-emoji" class="text-5xl mb-2">🏆</div>
+        <h3 id="result-score-text" class="text-sm sm:text-base text-cyan-300 font-bold mb-2">Aciertos: 0 / 0</h3>
+        <p id="result-message" class="text-xs sm:text-sm text-yellow-300 leading-relaxed font-medium">
+          Mensaje de rendimiento...
+        </p>
+      </div>
+
+      <footer class="w-full max-w-xs mx-auto mb-1">
+        <button id="btn-restart-quiz" class="btn-arcade w-full py-3 px-4 rounded-lg text-xs cursor-pointer tracking-wider">
+          <i class="fa-solid fa-rotate-left mr-1.5"></i> REPETIR RETO
+        </button>
+      </footer>
+    </section>
+
     <!-- MODAL DE FEEDBACK PREGUNTA -->
     <div id="feedback-modal" class="hidden absolute inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
       <div class="w-full max-w-md bg-purple-950 border-4 border-cyan-400 rounded-lg p-5 text-left relative shadow-[0_0_30px_#00f6ff]">
@@ -286,7 +307,7 @@
           Explicación del resultado...
         </p>
         <button id="btn-next-question" class="btn-arcade w-full py-3 text-xs sm:text-sm rounded cursor-pointer">
-          SIGUIENTE PREGUNTA <i class="fa-solid fa-forward ml-1"></i>
+          SIGUIENTE <i class="fa-solid fa-forward ml-1"></i>
         </button>
       </div>
     </div>
@@ -311,23 +332,28 @@
       });
     });
 
-    // Control de Cambio de Vista
+    // Control de Cambio de Vistas
     const viewSchema = document.getElementById('view-schema');
     const viewQuiz = document.getElementById('view-quiz');
+    const viewResults = document.getElementById('view-results');
     const navSchema = document.getElementById('nav-schema');
     const navQuiz = document.getElementById('nav-quiz');
 
     function showSchema() {
       viewQuiz.classList.add('hidden');
+      viewResults.classList.add('hidden');
       viewSchema.classList.remove('hidden');
     }
 
     function showQuiz() {
       viewSchema.classList.add('hidden');
+      viewResults.classList.add('hidden');
       viewQuiz.classList.remove('hidden');
       if (questions.length === 0) {
         loadQuestions();
       } else {
+        currentQuestionIdx = 0;
+        score = 0;
         renderCurrentQuestion();
       }
     }
@@ -336,35 +362,12 @@
     navQuiz.addEventListener('click', showQuiz);
     document.getElementById('btn-start-quiz').addEventListener('click', showQuiz);
     document.getElementById('btn-back-schema').addEventListener('click', showSchema);
+    document.getElementById('btn-restart-quiz').addEventListener('click', showQuiz);
 
-    // Banco de Preguntas por Defecto (Seguridad por si preguntas.json no está creado aún)
-    let questions = [
-      {
-        pregunta: "¿De qué gran división del Sistema Nervioso depende el Encéfalo?",
-        opciones: [
-          { texto: "Del Sistema Nervioso Central (SNC).", correcta: true, explicacion: "¡Correcto! El encéfalo forma parte principal del SNC." },
-          { texto: "Del Sistema Nervioso Periférico (SNP).", correcta: false, explicacion: "El SNP engloba los nervios periféricos, no el encéfalo." },
-          { texto: "Del Sistema Autónomo Simpático.", correcta: false, explicacion: "El simpático regula funciones involuntarias corporales." }
-        ]
-      },
-      {
-        pregunta: "¿Cuáles son las 3 partes que forman el Tronco Encefálico?",
-        opciones: [
-          { texto: "Mesencéfalo, Protuberancia y Bulbo Raquídeo.", correcta: true, explicacion: "¡Correcto! Esas son las 3 partes fundamentales del tronco encefálico." },
-          { texto: "Cerebro, Diencéfalo y Cerebelo.", correcta: false, explicacion: "Esas son divisiones generales del encéfalo, no del tronco." },
-          { texto: "Nervios craneales, espinales y ganglios.", correcta: false, explicacion: "Esas corresponden al Sistema Nervioso Periférico." }
-        ]
-      },
-      {
-        pregunta: "¿Cuántos pares de nervios craneales forman parte del Sistema Nervioso Periférico?",
-        opciones: [
-          { texto: "12 pares.", correcta: true, explicacion: "¡Correcto! Son 12 pares de nervios craneales que emergen del encéfalo." },
-          { texto: "31 pares.", correcta: false, explicacion: "31 pares corresponden a los nervios espinales o raquídeos." },
-          { texto: "50 pares.", correcta: false, explicacion: "La cifra exacta es de 12 pares craneales y 31 espinales." }
-        ]
-      }
-    ];
+    // Carga de Preguntas y Lógica de Puntuación
+    let questions = [];
     let currentQuestionIdx = 0;
+    let score = 0;
 
     async function loadQuestions() {
       try {
@@ -376,9 +379,10 @@
           }
         }
       } catch (error) {
-        console.log('Usando preguntas locales de respaldo.');
+        console.log('Error al cargar preguntas.json');
       }
       currentQuestionIdx = 0;
+      score = 0;
       renderCurrentQuestion();
     }
 
@@ -416,6 +420,8 @@
     }
 
     function handleAnswer(correct, reason) {
+      if (correct) score++;
+
       const modal = document.getElementById('feedback-modal');
       const feedbackIcon = document.getElementById('feedback-icon');
       const feedbackStatus = document.getElementById('feedback-status');
@@ -436,9 +442,39 @@
 
     document.getElementById('btn-next-question').addEventListener('click', () => {
       document.getElementById('feedback-modal').classList.add('hidden');
-      currentQuestionIdx = (currentQuestionIdx + 1) % questions.length;
-      renderCurrentQuestion();
+      currentQuestionIdx++;
+
+      if (currentQuestionIdx < questions.length) {
+        renderCurrentQuestion();
+      } else {
+        showResultsScreen();
+      }
     });
+
+    function showResultsScreen() {
+      viewQuiz.classList.add('hidden');
+      viewResults.classList.remove('hidden');
+
+      const percentage = (score / questions.length) * 100;
+      document.getElementById('result-score-text').textContent = `Aciertos: ${score} / ${questions.length} (${Math.round(percentage)}%)`;
+
+      const emojiEl = document.getElementById('result-emoji');
+      const msgEl = document.getElementById('result-message');
+
+      if (percentage < 50) {
+        emojiEl.textContent = "⚠️";
+        msgEl.textContent = "No has superado la prueba ¡Estudiar mejora el rendimiento de tus neuronas!";
+      } else if (percentage < 70) {
+        emojiEl.textContent = "💡";
+        msgEl.textContent = "¡Deberías repasar!";
+      } else if (percentage < 90) {
+        emojiEl.textContent = "👍";
+        msgEl.textContent = "¡Mejora tus resultados!";
+      } else {
+        emojiEl.textContent = "🏆";
+        msgEl.textContent = "¡Enhorabuena!";
+      }
+    }
   </script>
 </body>
 </html>
