@@ -1,158 +1,279 @@
 [
   {
-    "pregunta": "¿Cuál es la función principal del sistema nervioso?",
+    "pregunta": "1. Ordena las meninges de fuera hacia dentro:",
     "opciones": [
-      { "texto": "Permitir reaccionar a estímulos internos y externos.", "correcta": true, "explicacion": "¡Correcto! El sistema nervioso capta estímulos y elabora respuestas." },
-      { "texto": "Producir todas las hormonas del organismo.", "correcta": false, "explicacion": "Esa función corresponde al sistema endocrino." },
-      { "texto": "Transportar oxígeno a las células.", "correcta": false, "explicacion": "El transporte de oxígeno es tarea del aparato circulatorio." }
+      { "texto": "Duramadre, aracnoides y piamadre.", "correcta": true, "explicacion": "¡Correcto! La duramadre es la más externa, la aracnoides la intermedia y la piamadre la más interna." },
+      { "texto": "Piamadre, aracnoides y duramadre.", "correcta": false, "explicacion": "Ese es el orden de dentro hacia fuera." },
+      { "texto": "Aracnoides, duramadre y piamadre.", "correcta": false, "explicacion": "La duramadre siempre es la capa externa resistente." }
     ]
   },
   {
-    "pregunta": "¿Qué células transmiten los impulsos nerviosos?",
+    "pregunta": "2. Las células que transmiten impulsos nerviosos se llaman neuronas. Las células que las sostienen y nutren forman la...",
     "opciones": [
-      { "texto": "Las neuronas.", "correcta": true, "explicacion": "¡Correcto! Las neuronas son las células especializadas en conducir impulsos." },
-      { "texto": "Las células de la neuroglía.", "correcta": false, "explicacion": "La neuroglía tiene funciones de soporte y nutrición." },
-      { "texto": "Las células musculares.", "correcta": false, "explicacion": "Las células musculares realizan la contracción." }
+      { "texto": "Neuroglía (o células gliales).", "correcta": true, "explicacion": "¡Correcto! La neuroglía da soporte, nutrición y protección a las neuronas." },
+      { "texto": "Mielina.", "correcta": false, "explicacion": "La mielina es una capa aislante del axón." },
+      { "texto": "Sustancia blanca.", "correcta": false, "explicacion": "La sustancia blanca es el conjunto de axones mielinizados." }
     ]
   },
   {
-    "pregunta": "¿Qué parte de la neurona recibe y conduce el impulso hacia el cuerpo celular?",
+    "pregunta": "3. Caso práctico: Retiras la mano rápidamente al tocar algo caliente. ¿Qué papel desempeña la médula espinal en los reflejos?",
     "opciones": [
-      { "texto": "Las dendritas.", "correcta": true, "explicacion": "¡Correcto! Las dendritas reciben y conducen el impulso hacia el soma." },
-      { "texto": "El axón.", "correcta": false, "explicacion": "El axón aleja el impulso del cuerpo celular." },
-      { "texto": "La mielina.", "correcta": false, "explicacion": "La mielina aísla el axón." }
+      { "texto": "Actúa como centro integrador del arco reflejo sin esperar al cerebro.", "correcta": true, "explicacion": "¡Correcto! Procesa la respuesta rápida a través de las vías sensitivas y motoras espinales." },
+      { "texto": "Genera el dolor en los receptores cutáneos.", "correcta": false, "explicacion": "Los receptores cutáneos captan la señal, la médula integra la respuesta reflexógena." },
+      { "texto": "Inhibe la respuesta motora hasta consultar a la corteza cerebral.", "correcta": false, "explicacion": "Un reflejo medular es involuntario e inmediato." }
     ]
   },
   {
-    "pregunta": "¿Qué estructuras forman el sistema nervioso central (SNC)?",
+    "pregunta": "4. Compara el sistema nervioso simpático y parasimpático. ¿Cuál es la función general de cada uno?",
     "opciones": [
-      { "texto": "El encéfalo y la médula espinal.", "correcta": true, "explicacion": "¡Correcto! El SNC está formado exclusivamente por el encéfalo y la médula." },
-      { "texto": "Los nervios craneales y espinales.", "correcta": false, "explicacion": "Esos forman parte del Sistema Nervioso Periférico." },
-      { "texto": "Los músculos y las glándulas.", "correcta": false, "explicacion": "Son los órganos efectores." }
+      { "texto": "Simpático: activa en alerta/estrés. Parasimpático: favorece reposo/digestión.", "correcta": true, "explicacion": "¡Correcto! Tienen funciones antagónicas para mantener el equilibrio corporal." },
+      { "texto": "Simpático: controla los músculos voluntarios. Parasimpático: controla los reflejos.", "correcta": false, "explicacion": "Ambos pertenecen al Sistema Nervioso Autónomo (involuntario)." },
+      { "texto": "Simpático: relaja el organismo. Parasimpático: aumenta la frecuencia cardíaca.", "correcta": false, "explicacion": "Es justo a la inversa." }
     ]
   },
   {
-    "pregunta": "¿Cuál es la capa más externa de las meninges?",
+    "pregunta": "5. Clasifica: ¿A qué vía corresponde llevar información desde un receptor sensorial al SNC y a cuál llevar una orden desde el SNC a un músculo?",
     "opciones": [
-      { "texto": "La duramadre.", "correcta": true, "explicacion": "¡Correcto! La duramadre es la membrana más externa, fibrosa y gruesa." },
-      { "texto": "La aracnoides.", "correcta": false, "explicacion": "La aracnoides es la capa intermedia." },
-      { "texto": "La piamadre.", "correcta": false, "explicacion": "La piamadre es la capa más interna." }
+      { "texto": "Sensorial al SNC = Vía Sensitiva/Aferente. Orden a músculo = Vía Motora/Eferente.", "correcta": true, "explicacion": "¡Correcto! Las vías sensitivas entran (aferentes) y las motoras salen (eferentes)." },
+      { "texto": "Sensorial al SNC = Vía Motora. Orden a músculo = Vía Sensitiva.", "correcta": false, "explicacion": "Está invertido." },
+      { "texto": "Ambas corresponden exclusivamente al Sistema Autónomo Simpático.", "correcta": false, "explicacion": "Pertenecen al circuito somático y sensitivo-motor." }
     ]
   },
   {
-    "pregunta": "¿Dónde se encuentra la mayor parte del líquido cefalorraquídeo (LCR)?",
+    "pregunta": "Test 1. ¿Qué estructura de la neurona recibe principalmente los estímulos?",
     "opciones": [
-      { "texto": "En el espacio subaracnoideo.", "correcta": true, "explicacion": "¡Correcto! Circula por los ventrículos y el espacio subaracnoideo." },
-      { "texto": "En el espacio epidural.", "correcta": false, "explicacion": "El espacio epidural está por fuera de la duramadre." },
-      { "texto": "Dentro de la piamadre.", "correcta": false, "explicacion": "No se acumula en el espesor de la piamadre." }
+      { "texto": "Las dendritas.", "correcta": true, "explicacion": "¡Correcto! Las dendritas son las prolongaciones receptoras del soma." },
+      { "texto": "El axón.", "correcta": false, "explicacion": "El axón transmite el impulso hacia fuera." },
+      { "texto": "La mielina.", "correcta": false, "explicacion": "La mielina aísla la fibra." }
     ]
   },
   {
-    "pregunta": "¿Qué estructura del encéfalo coordina los movimientos de forma inconsciente?",
+    "pregunta": "Test 2. ¿Qué función tiene la mielina en el sistema nervioso central?",
     "opciones": [
-      { "texto": "El cerebelo.", "correcta": true, "explicacion": "¡Correcto! El cerebelo coordina el equilibrio y los movimientos finos." },
-      { "texto": "El tálamo.", "correcta": false, "explicacion": "El tálamo es una estación de relevo sensorial." },
-      { "texto": "La hipófisis.", "correcta": false, "explicacion": "La hipófisis es una glándula endocrina." }
+      { "texto": "Transmitir más rápido el impulso nervioso.", "correcta": true, "explicacion": "¡Correcto! Aumenta la velocidad de conducción mediante el impulso saltatorio." },
+      { "texto": "Permitir la conexión entre células de la neuroglía.", "correcta": false, "explicacion": "No es su función principal." },
+      { "texto": "Alimentar a las neuronas.", "correcta": false, "explicacion": "La nutrición es función de la neuroglía (astrocitos)." }
     ]
   },
   {
-    "pregunta": "¿Qué estructura segrega melatonina según los apuntes?",
+    "pregunta": "Test 3. ¿Qué estructura conecta los dos hemisferios cerebrales?",
     "opciones": [
-      { "texto": "La glándula pineal.", "correcta": true, "explicacion": "¡Correcto! La glándula pineal produce melatonina." },
-      { "texto": "La hipófisis.", "correcta": false, "explicacion": "La hipófisis regula otras hormonas corporales." },
-      { "texto": "El cerebelo.", "correcta": false, "explicacion": "El cerebelo gestiona la coordinación motora." }
+      { "texto": "El cuerpo calloso.", "correcta": true, "explicacion": "¡Correcto! El cuerpo calloso es el haz de fibras que une ambos hemisferios." },
+      { "texto": "El cerebelo.", "correcta": false, "explicacion": "El cerebelo es una estructura independiente bajo el cerebro." },
+      { "texto": "El hipotálamo.", "correcta": false, "explicacion": "El hipotálamo está en el diencéfalo." }
     ]
   },
   {
-    "pregunta": "¿Qué prueba de imagen se utiliza especialmente en emergencias y para valorar lesiones óseas?",
+    "pregunta": "Test 4. ¿En qué espacio se encuentra la mayor parte del líquido cefalorraquídeo?",
     "opciones": [
-      { "texto": "La tomografía computarizada (TC).", "correcta": true, "explicacion": "¡Correcto! La TC es rápida y excelente ante traumatismos óseos." },
-      { "texto": "La resonancia magnética.", "correcta": false, "explicacion": "La resonancia requiere más tiempo de exploración." },
-      { "texto": "El electroencefalograma.", "correcta": false, "explicacion": "Registra la actividad eléctrica cerebral." }
+      { "texto": "Espacio subaracnoideo.", "correcta": true, "explicacion": "¡Correcto! Se ubica entre la aracnoides y la piamadre." },
+      { "texto": "Espacio epidural.", "correcta": false, "explicacion": "Está por fuera de la duramadre." },
+      { "texto": "Espacio subdural.", "correcta": false, "explicacion": "Es un espacio virtual bajo la duramadre." }
     ]
   },
   {
-    "pregunta": "¿Cuántos pares de nervios craneales hay?",
+    "pregunta": "Test 5. ¿Qué parte del encéfalo coordina los movimientos de forma inconsciente?",
     "opciones": [
-      { "texto": "12 pares.", "correcta": true, "explicacion": "¡Correcto! Son 12 pares que emergen del encéfalo." },
-      { "texto": "31 pares.", "correcta": false, "explicacion": "31 pares corresponden a los nervios raquídeos o espinales." },
-      { "texto": "8 pares.", "correcta": false, "explicacion": "No coincide con los pares craneales." }
+      { "texto": "El cerebelo.", "correcta": true, "explicacion": "¡Correcto! Regula postura, equilibrio y coordinación fina." },
+      { "texto": "El tálamo.", "correcta": false, "explicacion": "Filtra la información sensitiva." },
+      { "texto": "La hipófisis.", "correcta": false, "explicacion": "Es una glándula endocrina." }
     ]
   },
   {
-    "pregunta": "¿Qué división del sistema nervioso autónomo prepara al organismo para la lucha o huida?",
+    "pregunta": "Test 6. ¿Cuál es la función principal de los nervios aferentes?",
     "opciones": [
-      { "texto": "El simpático.", "correcta": true, "explicacion": "¡Correcto! El simpático activa al cuerpo ante situaciones de estrés o alerta." },
-      { "texto": "El parasimpático.", "correcta": false, "explicacion": "El parasimpático se encarga del descanso y la relajación." },
-      { "texto": "El somático.", "correcta": false, "explicacion": "El sistema somático controla la musculatura voluntaria." }
+      { "texto": "Llevar información desde los receptores al SNC.", "correcta": true, "explicacion": "¡Correcto! Son las vías sensitivas de entrada." },
+      { "texto": "Llevar órdenes desde el SNC a los músculos.", "correcta": false, "explicacion": "Esa es la función de las vías eferentes (motoras)." },
+      { "texto": "Producir líquido cefalorraquídeo.", "correcta": false, "explicacion": "No producen líquidos corporales." }
     ]
   },
   {
-    "pregunta": "¿Qué prueba registra la actividad eléctrica cerebral mediante electrodos?",
+    "pregunta": "Test 7. ¿Qué división del sistema nervioso autónomo prepara al organismo para la lucha o huida?",
     "opciones": [
-      { "texto": "El electroencefalograma.", "correcta": true, "explicacion": "¡Correcto! Mide las ondas eléctricas cerebrales." },
-      { "texto": "La tomografía computarizada.", "correcta": false, "explicacion": "Emplea rayos X para imágenes transversales." },
-      { "texto": "La resonancia magnética.", "correcta": false, "explicacion": "Emplea campos magnéticos." }
+      { "texto": "Simpático.", "correcta": true, "explicacion": "¡Correcto! Prepara al cuerpo para situaciones de emergencia." },
+      { "texto": "Parasimpático.", "correcta": false, "explicacion": "Favorece la conservación de energía." },
+      { "texto": "Somático.", "correcta": false, "explicacion": "Es la rama voluntaria." }
     ]
   },
   {
-    "pregunta": "Actividad: ¿Cómo se divide principalmente el sistema nervioso en su primera gran clasificación?",
+    "pregunta": "Test 8. ¿Qué estructura segrega melatonina según los apuntes?",
     "opciones": [
-      { "texto": "En Sistema Nervioso Central y Sistema Nervioso Periférico.", "correcta": true, "explicacion": "¡Correcto! Esa es la división estructural fundamental." },
-      { "texto": "En sistema simpático y parasimpático exclusivamente.", "correcta": false, "explicacion": "Eso forma parte del sistema autónomo." },
-      { "texto": "En somático y voluntario.", "correcta": false, "explicacion": "Son sinónimos parciales dentro del periférico." }
+      { "texto": "Glándula pineal.", "correcta": true, "explicacion": "¡Correcto! Segrega melatonina para regular los ritmos circadianos." },
+      { "texto": "Hipófisis.", "correcta": false, "explicacion": "Segrega hormonas trópicas y de crecimiento." },
+      { "texto": "Cerebelo.", "correcta": false, "explicacion": "Es un centro motor del encéfalo." }
     ]
   },
   {
-    "pregunta": "Actividad: Las tres meninges, ordenadas de fuera hacia dentro, son duramadre, aracnoides y...",
+    "pregunta": "Test 9. ¿Qué prueba se utiliza especialmente en situaciones de emergencia y para valorar lesiones óseas?",
     "opciones": [
-      { "texto": "Piamadre.", "correcta": true, "explicacion": "¡Correcto! Duramadre (externa), aracnoides (intermedia) y piamadre (interna)." },
-      { "texto": "Epéndimo.", "correcta": false, "explicacion": "El epéndimo reviste el canal central medular." },
-      { "texto": "Periostio.", "correcta": false, "explicacion": "El periostio recubre los huesos." }
+      { "texto": "Tomografía computarizada (TC).", "correcta": true, "explicacion": "¡Correcto! Es rápida y muy precisa para hueso y traumatismos." },
+      { "texto": "Resonancia magnética.", "correcta": false, "explicacion": "Se usa para tejidos blandos y requiere tiempo." },
+      { "texto": "Electroencefalograma.", "correcta": false, "explicacion": "Mide actividad eléctrica." }
     ]
   },
   {
-    "pregunta": "Actividad: ¿Qué estructuras forman principalmente la sustancia gris del sistema nervioso?",
+    "pregunta": "Test 10. ¿Cuántos pares de nervios craneales hay?",
     "opciones": [
-      { "texto": "Los cuerpos neuronales (somas).", "correcta": true, "explicacion": "¡Correcto! La sustancia gris está compuesta por somas neuronales." },
-      { "texto": "Los axones recubiertos de mielina.", "correcta": false, "explicacion": "Los axones mielinizados forman la sustancia blanca." },
-      { "texto": "Las meninges protectoras.", "correcta": false, "explicacion": "Las meninges son membranas de tejido conectivo." }
+      { "texto": "12 pares.", "correcta": true, "explicacion": "¡Correcto! Nacen en el encéfalo." },
+      { "texto": "31 pares.", "correcta": false, "explicacion": "Son los pares de nervios espinales." },
+      { "texto": "8 pares.", "correcta": false, "explicacion": "Es incorrecto." }
     ]
   },
   {
-    "pregunta": "Actividad: ¿Cómo se denominan los nervios que llevan información desde los receptores hacia el SNC?",
+    "pregunta": "Test Repaso 1. ¿Cuál es la función principal del sistema nervioso?",
     "opciones": [
-      { "texto": "Sensitivos o aferentes.", "correcta": true, "explicacion": "¡Correcto! Los nervios aferentes transportan la señal sensitiva hacia los centros de integración." },
-      { "texto": "Motores o eferentes.", "correcta": false, "explicacion": "Los eferentes llevan la orden de respuesta hacia los efectores." },
-      { "texto": "Autónomos exclusivos.", "correcta": false, "explicacion": "No es la denominación genérica de las vías de entrada." }
+      { "texto": "Permitir reaccionar a estímulos internos y externos.", "correcta": true, "explicacion": "¡Correcto! Capta señales y elabora respuestas adaptativas." },
+      { "texto": "Producir todas las hormonas del organismo.", "correcta": false, "explicacion": "Corresponde al sistema endocrino." },
+      { "texto": "Transportar oxígeno a las células.", "correcta": false, "explicacion": "Corresponde al sistema circulatorio." }
     ]
   },
   {
-    "pregunta": "Actividad (Verdadero/Falso): Las neuronas son las únicas células capaces de transmitir impulsos nerviosos.",
+    "pregunta": "Test Repaso 2. ¿Qué células transmiten los impulsos nerviosos?",
     "opciones": [
-      { "texto": "Verdadero.", "correcta": true, "explicacion": "¡Correcto! Las neuronas son las células excitables del tejido nervioso." },
-      { "texto": "Falso.", "correcta": false, "explicacion": "Es una afirmación verdadera según los contenidos del tema." }
+      { "texto": "Neuronas.", "correcta": true, "explicacion": "¡Correcto! Son las unidades fundamentales de transmisión." },
+      { "texto": "Células de la neuroglía.", "correcta": false, "explicacion": "Son células de sostén." },
+      { "texto": "Células musculares.", "correcta": false, "explicacion": "Ejecutan la contracción." }
     ]
   },
   {
-    "pregunta": "Actividad (Verdadero/Falso): El cerebelo participa activamente en la coordinación de los movimientos.",
+    "pregunta": "Test Repaso 3. ¿Qué parte de la neurona recibe y conduce el impulso hacia el cuerpo celular?",
     "opciones": [
-      { "texto": "Verdadero.", "correcta": true, "explicacion": "¡Correcto! El cerebelo es clave para la armonía y precisión motora." },
-      { "texto": "Falso.", "correcta": false, "explicacion": "Es verdadero; el cerebelo coordina el movimiento." }
+      { "texto": "Dendritas.", "correcta": true, "explicacion": "¡Correcto! Llevan la información hacia el soma." },
+      { "texto": "Axón.", "correcta": false, "explicacion": "Saca el impulso del soma." },
+      { "texto": "Mielina.", "correcta": false, "explicacion": "Aísla la fibra nerviosa." }
     ]
   },
   {
-    "pregunta": "Actividad (Verdadero/Falso): Los nervios sensitivos llevan información desde el SNC hacia los músculos.",
+    "pregunta": "Test Repaso 4. ¿Qué estructuras forman el sistema nervioso central?",
     "opciones": [
-      { "texto": "Falso.", "correcta": true, "explicacion": "¡Correcto! Los que llevan información hacia los músculos son los nervios motores o eferentes." },
-      { "texto": "Verdadero.", "correcta": false, "explicacion": "Es falso; los sensitivos van de los receptores al SNC." }
+      { "texto": "Encéfalo y médula espinal.", "correcta": true, "explicacion": "¡Correcto! Integran el SNC." },
+      { "texto": "Nervios craneales y espinales.", "correcta": false, "explicacion": "Integran el SNP." },
+      { "texto": "Músculos y glándulas.", "correcta": false, "explicacion": "Son efectores." }
     ]
   },
   {
-    "pregunta": "Actividad (Verdadero/Falso): La médula espinal participa directamente en los reflejos espinales.",
+    "pregunta": "Test Repaso 5. ¿Cuál es la capa más externa de las meninges?",
     "opciones": [
-      { "texto": "Verdadero.", "correcta": true, "explicacion": "¡Correcto! La médula procesa de forma autónoma y rápida los arcos reflejos." },
-      { "texto": "Falso.", "correcta": false, "explicacion": "Es verdadero, la médula es el centro de los actos reflejos medulares." }
+      { "texto": "Duramadre.", "correcta": true, "explicacion": "¡Correcto! Es la túnica protectora externa." },
+      { "texto": "Aracnoides.", "correcta": false, "explicacion": "Capa intermedia." },
+      { "texto": "Piamadre.", "correcta": false, "explicacion": "Capa interna." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 6. ¿Dónde se encuentra la mayor parte del líquido cefalorraquídeo (LCR)?",
+    "opciones": [
+      { "texto": "En el espacio subaracnoideo.", "correcta": true, "explicacion": "¡Correcto! Baña el SNC en este espacio." },
+      { "texto": "En el espacio epidural.", "correcta": false, "explicacion": "Está por fuera de la duramadre." },
+      { "texto": "En el interior de los nervios periféricos.", "correcta": false, "explicacion": "No circula por dentro de los nervios." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 7. ¿Qué estructura participa en la coordinación de los movimientos?",
+    "opciones": [
+      { "texto": "Cerebelo.", "correcta": true, "explicacion": "¡Correcto! Centro de coordinación motora." },
+      { "texto": "Hipófisis.", "correcta": false, "explicacion": "Glándula endocrina." },
+      { "texto": "Glándula pineal.", "correcta": false, "explicacion": "Regula el sueño." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 8. ¿Qué nervios llevan información desde los receptores hasta el SNC?",
+    "opciones": [
+      { "texto": "Nervios sensitivos o aferentes.", "correcta": true, "explicacion": "¡Correcto! Conducen impulsos centrípetos (hacia el centro)." },
+      { "texto": "Nervios motores o eferentes.", "correcta": false, "explicacion": "Conducen impulsos centrífugos (hacia los músculos)." },
+      { "texto": "Nervios autónomos exclusivamente.", "correcta": false, "explicacion": "Es incompleto." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 9. ¿Qué sistema controla el músculo cardíaco, el músculo liso y las glándulas de forma involuntaria?",
+    "opciones": [
+      { "texto": "Sistema nervioso autónomo.", "correcta": true, "explicacion": "¡Correcto! Controla la vida vegetativa e involuntaria." },
+      { "texto": "Sistema nervioso somático.", "correcta": false, "explicacion": "Controla los movimientos voluntarios." },
+      { "texto": "Sistema nervioso voluntario exclusivamente.", "correcta": false, "explicacion": "Es el somático." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 10. ¿Qué prueba registra la actividad eléctrica cerebral?",
+    "opciones": [
+      { "texto": "Electroencefalograma.", "correcta": true, "explicacion": "¡Correcto! Capta los potenciales eléctricos cerebrales." },
+      { "texto": "Resonancia magnética.", "correcta": false, "explicacion": "Obtiene imágenes anatómicas estructurales." },
+      { "texto": "Tomografía computarizada.", "correcta": false, "explicacion": "Usa rayos X." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 11. ¿Qué división del sistema nervioso autónomo prepara al organismo para la lucha o huida?",
+    "opciones": [
+      { "texto": "Simpático.", "correcta": true, "explicacion": "¡Correcto! Moviliza recursos en situaciones de estrés." },
+      { "texto": "Parasimpático.", "correcta": false, "explicacion": "Conserva la energía." },
+      { "texto": "Somático.", "correcta": false, "explicacion": "Control muscular voluntario." }
+    ]
+  },
+  {
+    "pregunta": "Test Repaso 12. ¿Qué prueba de imagen utiliza campos magnéticos para obtener imágenes?",
+    "opciones": [
+      { "texto": "Resonancia magnética.", "correcta": true, "explicacion": "¡Correcto! No usa radiación ionizante, sino campos magnéticos." },
+      { "texto": "Electroencefalograma.", "correcta": false, "explicacion": "Registra señales eléctricas." },
+      { "texto": "Examen neurológico.", "correcta": false, "explicacion": "Es una evaluación clínica directa." }
+    ]
+  },
+  {
+    "pregunta": "Completar 1. El sistema nervioso se divide en sistema nervioso central y sistema nervioso...",
+    "opciones": [
+      { "texto": "Periférico.", "correcta": true, "explicacion": "¡Correcto! SNC y SNP son las dos grandes ramas." },
+      { "texto": "Autónomo.", "correcta": false, "explicacion": "El autónomo es una subclasificación del SNP." },
+      { "texto": "Somático.", "correcta": false, "explicacion": "El somático es una rama del SNP." }
+    ]
+  },
+  {
+    "pregunta": "Completar 2. El encéfalo y la médula espinal forman el sistema nervioso...",
+    "opciones": [
+      { "texto": "Central.", "correcta": true, "explicacion": "¡Correcto! Ambos componen el SNC." },
+      { "texto": "Periférico.", "correcta": false, "explicacion": "El periférico son los nervios que salen de ellos." },
+      { "texto": "Vegetativo.", "correcta": false, "explicacion": "Vegetativo o autónomo es una división funcional." }
+    ]
+  },
+  {
+    "pregunta": "Completar 3. La sustancia gris está formada principalmente por los cuerpos neuronales y la sustancia blanca por los...",
+    "opciones": [
+      { "texto": "Axones mielinizados.", "correcta": true, "explicacion": "¡Correcto! La mielina de los axones le da el color blanco característico." },
+      { "texto": "Astrocitos.", "correcta": false, "explicacion": "Los astrocitos son células gliales." },
+      { "texto": "Dendritas sin mielina.", "correcta": false, "explicacion": "Forman parte de la sustancia gris junto a los somas." }
+    ]
+  },
+  {
+    "pregunta": "Completar 4. Los nervios sensitivos también se denominan aferentes y los motores se denominan...",
+    "opciones": [
+      { "texto": "Eferentes (o descendentes).", "correcta": true, "explicacion": "¡Correcto! Las vías motoras llevan las respuestas desde el centro hacia la periferia." },
+      { "texto": "Ascendentes.", "correcta": false, "explicacion": "Ascendentes son las vías sensitivas." },
+      { "texto": "Craneales.", "correcta": false, "explicacion": "No todos los motores son craneales." }
+    ]
+  },
+  {
+    "pregunta": "Completar 5. El sistema nervioso autónomo se divide en simpático y...",
+    "opciones": [
+      { "texto": "Parasimpático.", "correcta": true, "explicacion": "¡Correcto! Son las dos divisiones antagónicas del autónomo." },
+      { "texto": "Somático.", "correcta": false, "explicacion": "El somático es la división voluntaria." },
+      { "texto": "Central.", "correcta": false, "explicacion": "El central es el SNC." }
+    ]
+  },
+  {
+    "pregunta": "V/F 1. La neuroglía tiene como única función transmitir impulsos nerviosos.",
+    "opciones": [
+      { "texto": "Falso.", "correcta": true, "explicacion": "¡Correcto! La neuroglía no transmite impulsos, da soporte, nutrición y protección." },
+      { "texto": "Verdadero.", "correcta": false, "explicacion": "Quienes transmiten los impulsos son las neuronas." }
+    ]
+  },
+  {
+    "pregunta": "V/F 2. La aracnoides es la capa más externa de las meninges.",
+    "opciones": [
+      { "texto": "Falso.", "correcta": true, "explicacion": "¡Correcto! La capa más externa es la duramadre. La aracnoides es la intermedia." },
+      { "texto": "Verdadero.", "correcta": false, "explicacion": "La aracnoides es la capa intermedia." }
+    ]
+  },
+  {
+    "pregunta": "V/F 3. El sistema nervioso autónomo controla exclusivamente acciones voluntarias.",
+    "opciones": [
+      { "texto": "Falso.", "correcta": true, "explicacion": "¡Correcto! El sistema autónomo regula de forma involuntaria los órganos y vísceras." },
+      { "texto": "Verdadero.", "correcta": false, "explicacion": "Las acciones voluntarias las controla el sistema somático." }
     ]
   }
 ]
