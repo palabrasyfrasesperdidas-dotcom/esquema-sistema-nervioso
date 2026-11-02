@@ -132,32 +132,54 @@
           <!-- RAMAS SNC -->
           <div id="branch-snc" class="hidden mt-3 pl-2 sm:pl-4 border-l-2 border-pink-500 space-y-2">
             
+            <!-- SUB-NODO: ENCÉFALO -->
             <div class="bg-purple-950/80 p-2.5 rounded border border-cyan-400/50">
               <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-encefalo">
                 <span class="text-xs sm:text-sm font-bold text-yellow-300">1. Encéfalo</span>
                 <i class="fa-solid fa-chevron-down text-yellow-300 text-xs icon-arrow"></i>
               </button>
               
-              <div id="branch-encefalo" class="hidden mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+              <div id="branch-encefalo" class="hidden mt-2 space-y-2 pt-1">
+                
                 <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
                   <span class="font-bold text-cyan-300 block">• Cerebro (Telencéfalo)</span>
                   <span class="text-gray-300">Corteza y funciones superiores.</span>
                 </div>
+
                 <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
                   <span class="font-bold text-cyan-300 block">• Diencéfalo</span>
                   <span class="text-gray-300">Tálamo e Hipotálamo.</span>
                 </div>
+
                 <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
                   <span class="font-bold text-cyan-300 block">• Cerebelo</span>
                   <span class="text-gray-300">Coordinación motora inconsciente.</span>
                 </div>
-                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
-                  <span class="font-bold text-cyan-300 block">• Tronco Encefálico</span>
-                  <span class="text-gray-300">Mesencéfalo, Protuberancia y Bulbo Raquídeo.</span>
+
+                <!-- TRONCO ENCEFÁLICO DESPLEGABLE CON SUS 3 PARTES -->
+                <div class="bg-purple-900/80 p-2 rounded text-[11px] border border-yellow-400/50">
+                  <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-tronco">
+                    <span class="font-bold text-yellow-300">• Tronco Encefálico</span>
+                    <i class="fa-solid fa-chevron-down text-yellow-300 text-[10px] icon-arrow"></i>
+                  </button>
+                  
+                  <div id="branch-tronco" class="hidden mt-2 pl-2 border-l-2 border-yellow-400 space-y-1.5">
+                    <div class="bg-purple-950/80 p-1.5 rounded text-[10px]">
+                      <span class="font-bold text-cyan-300">1. Mesencéfalo:</span> Integración visual y auditiva.
+                    </div>
+                    <div class="bg-purple-950/80 p-1.5 rounded text-[10px]">
+                      <span class="font-bold text-cyan-300">2. Protuberancia (Puente):</span> Conexión entre estructuras.
+                    </div>
+                    <div class="bg-purple-950/80 p-1.5 rounded text-[10px]">
+                      <span class="font-bold text-cyan-300">3. Bulbo Raquídeo:</span> Control de funciones vitales e involuntarias.
+                    </div>
+                  </div>
                 </div>
+
               </div>
             </div>
 
+            <!-- SUB-NODO: MÉDULA ESPINAL -->
             <div class="bg-purple-950/80 p-2.5 rounded border border-cyan-400/50">
               <span class="text-xs sm:text-sm font-bold text-yellow-300 block">2. Médula Espinal</span>
               <p class="text-[11px] text-gray-300 mt-1">Conducción de impulsos y centro de actos reflejos.</p>
@@ -182,6 +204,7 @@
           <!-- RAMAS SNP -->
           <div id="branch-snp" class="hidden mt-3 pl-2 sm:pl-4 border-l-2 border-cyan-400 space-y-2">
             
+            <!-- SUB-NODO: SOMÁTICO -->
             <div class="bg-purple-950/80 p-2.5 rounded border border-pink-500/50">
               <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-somatico">
                 <span class="text-xs sm:text-sm font-bold text-yellow-300">1. Somático (Voluntario)</span>
@@ -198,6 +221,7 @@
               </div>
             </div>
 
+            <!-- SUB-NODO: AUTÓNOMO -->
             <div class="bg-purple-950/80 p-2.5 rounded border border-pink-500/50">
               <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-autonomo">
                 <span class="text-xs sm:text-sm font-bold text-yellow-300">2. Autónomo (Involuntario)</span>
@@ -321,6 +345,14 @@
           { texto: "Del Sistema Nervioso Central (SNC).", correcta: true, explicacion: "¡Correcto! El encéfalo forma parte principal del SNC." },
           { texto: "Del Sistema Nervioso Periférico (SNP).", correcta: false, explicacion: "El SNP engloba los nervios periféricos, no el encéfalo." },
           { texto: "Del Sistema Autónomo Simpático.", correcta: false, explicacion: "El simpático regula funciones involuntarias corporales." }
+        ]
+      },
+      {
+        pregunta: "¿Cuáles son las 3 partes que forman el Tronco Encefálico?",
+        opciones: [
+          { texto: "Mesencéfalo, Protuberancia y Bulbo Raquídeo.", correcta: true, explicacion: "¡Correcto! Esas son las 3 partes fundamentales del tronco encefálico." },
+          { texto: "Cerebro, Diencéfalo y Cerebelo.", correcta: false, explicacion: "Esas son divisiones generales del encéfalo, no del tronco." },
+          { texto: "Nervios craneales, espinales y ganglios.", correcta: false, explicacion: "Esas corresponden al Sistema Nervioso Periférico." }
         ]
       },
       {
