@@ -21,6 +21,8 @@
       user-select: none;
       -webkit-user-select: none;
       overflow-x: hidden;
+      margin: 0;
+      padding: 0;
     }
 
     .font-arcade {
@@ -84,4 +86,327 @@
 
     .btn-option:hover, .btn-option:active {
       border-color: #ffe600;
-      background:
+      background: #380070;
+      box-shadow: 0 0 12px #ffe600;
+    }
+  </style>
+</head>
+<body class="min-h-screen w-screen flex flex-col items-center justify-center p-2 sm:p-4">
+
+  <!-- Botones de Navegación Superiores -->
+  <nav class="fixed top-3 left-3 z-50 flex gap-2">
+    <button id="nav-schema" class="bg-purple-950 border-2 border-cyan-400 text-cyan-300 px-3 py-2 rounded-lg text-xs font-arcade shadow-[0_0_10px_#00f6ff] cursor-pointer">
+      <i class="fa-solid fa-sitemap mr-1"></i> ESQUEMA
+    </button>
+    <button id="nav-quiz" class="bg-purple-950 border-2 border-pink-500 text-pink-300 px-3 py-2 rounded-lg text-xs font-arcade shadow-[0_0_10px_#ff007f] cursor-pointer">
+      <i class="fa-solid fa-gamepad mr-1"></i> RETO
+    </button>
+  </nav>
+
+  <main class="crt-container w-full max-w-2xl min-h-[620px] h-[90vh] max-h-[850px] flex flex-col justify-between p-3 sm:p-6 relative overflow-y-auto z-10 pt-16">
+    
+    <!-- ================= VISTA 1: ESQUEMA JERÁRQUICO INTERACTIVO ================= -->
+    <section id="view-schema" class="h-full flex flex-col justify-between">
+      <header class="text-center mb-3">
+        <h1 class="text-base sm:text-xl neon-pink font-arcade tracking-wider leading-relaxed">
+          ORGANIZACIÓN DEL<br><span class="neon-cyan text-lg sm:text-2xl">SISTEMA NERVIOSO</span>
+        </h1>
+        <p class="text-[11px] sm:text-xs text-yellow-300 mt-1 font-semibold">Toca cada sección para desplegar sus ramas</p>
+      </header>
+
+      <div class="flex-grow overflow-y-auto pr-1 space-y-3">
+        
+        <!-- NODO RAÍZ: SISTEMA NERVIOSO CENTRAL (SNC) -->
+        <div class="card-node rounded-lg p-3">
+          <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-snc">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🧠</span>
+              <div>
+                <h2 class="text-xs sm:text-sm font-arcade text-pink-400">SISTEMA NERVIOSO CENTRAL</h2>
+                <p class="text-[11px] text-gray-300 font-medium">SNC • Centro de integración y control</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down text-cyan-400 transform transition-transform duration-200 icon-arrow"></i>
+          </button>
+
+          <!-- RAMAS SNC -->
+          <div id="branch-snc" class="hidden mt-3 pl-2 sm:pl-4 border-l-2 border-pink-500 space-y-2">
+            
+            <div class="bg-purple-950/80 p-2.5 rounded border border-cyan-400/50">
+              <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-encefalo">
+                <span class="text-xs sm:text-sm font-bold text-yellow-300">1. Encéfalo</span>
+                <i class="fa-solid fa-chevron-down text-yellow-300 text-xs icon-arrow"></i>
+              </button>
+              
+              <div id="branch-encefalo" class="hidden mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
+                  <span class="font-bold text-cyan-300 block">• Cerebro (Telencéfalo)</span>
+                  <span class="text-gray-300">Corteza y funciones superiores.</span>
+                </div>
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
+                  <span class="font-bold text-cyan-300 block">• Diencéfalo</span>
+                  <span class="text-gray-300">Tálamo e Hipotálamo.</span>
+                </div>
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
+                  <span class="font-bold text-cyan-300 block">• Cerebelo</span>
+                  <span class="text-gray-300">Coordinación motora inconsciente.</span>
+                </div>
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-pink-500/30">
+                  <span class="font-bold text-cyan-300 block">• Tronco Encefálico</span>
+                  <span class="text-gray-300">Mesencéfalo, Protuberancia y Bulbo Raquídeo.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-purple-950/80 p-2.5 rounded border border-cyan-400/50">
+              <span class="text-xs sm:text-sm font-bold text-yellow-300 block">2. Médula Espinal</span>
+              <p class="text-[11px] text-gray-300 mt-1">Conducción de impulsos y centro de actos reflejos.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- NODO RAÍZ: SISTEMA NERVIOSO PERIFÉRICO (SNP) -->
+        <div class="card-node rounded-lg p-3">
+          <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-snp">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🌐</span>
+              <div>
+                <h2 class="text-xs sm:text-sm font-arcade text-cyan-400">SISTEMA NERVIOSO PERIFÉRICO</h2>
+                <p class="text-[11px] text-gray-300 font-medium">SNP • Red de conexión corporal</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down text-cyan-400 transform transition-transform duration-200 icon-arrow"></i>
+          </button>
+
+          <!-- RAMAS SNP -->
+          <div id="branch-snp" class="hidden mt-3 pl-2 sm:pl-4 border-l-2 border-cyan-400 space-y-2">
+            
+            <div class="bg-purple-950/80 p-2.5 rounded border border-pink-500/50">
+              <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-somatico">
+                <span class="text-xs sm:text-sm font-bold text-yellow-300">1. Somático (Voluntario)</span>
+                <i class="fa-solid fa-chevron-down text-yellow-300 text-xs icon-arrow"></i>
+              </button>
+              
+              <div id="branch-somatico" class="hidden mt-2 space-y-1.5 pt-1">
+                <div class="bg-purple-900/60 p-2 rounded text-[11px]">
+                  <span class="font-bold text-pink-300">• Nervios Espinales o Raquídeos:</span> 31 pares.
+                </div>
+                <div class="bg-purple-900/60 p-2 rounded text-[11px]">
+                  <span class="font-bold text-pink-300">• Nervios Craneales:</span> 12 pares.
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-purple-950/80 p-2.5 rounded border border-pink-500/50">
+              <button class="w-full flex justify-between items-center text-left cursor-pointer toggle-btn" data-target="branch-autonomo">
+                <span class="text-xs sm:text-sm font-bold text-yellow-300">2. Autónomo (Involuntario)</span>
+                <i class="fa-solid fa-chevron-down text-yellow-300 text-xs icon-arrow"></i>
+              </button>
+              
+              <div id="branch-autonomo" class="hidden mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-yellow-400/30">
+                  <span class="font-bold text-yellow-300 block">• Simpático</span>
+                  <span class="text-gray-300">Activación, estrés y huida.</span>
+                </div>
+                <div class="bg-purple-900/60 p-2 rounded text-[11px] border border-green-400/30">
+                  <span class="font-bold text-green-300 block">• Parasimpático</span>
+                  <span class="text-gray-300">Reposo, digestión y relajación.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="mt-2 text-center">
+        <button id="btn-start-quiz" class="btn-arcade w-full py-3 text-xs sm:text-sm rounded cursor-pointer">
+          IR AL RETO DEL ESQUEMA <i class="fa-solid fa-play ml-1"></i>
+        </button>
+      </footer>
+    </section>
+
+    <!-- ================= VISTA 2: RETO DINÁMICO ================= -->
+    <section id="view-quiz" class="hidden h-full flex flex-col justify-between relative">
+      <div class="w-full flex justify-between items-center bg-purple-950 px-3 py-2 border-2 border-cyan-400 rounded-md text-xs mb-2 font-semibold">
+        <div><span class="text-pink-400">MODO:</span> <span class="text-yellow-300">DESAFÍO ESQUEMA</span></div>
+        <div><span class="text-cyan-400">PREGUNTA:</span> <span id="quiz-counter" class="text-green-400">1 / -</span></div>
+      </div>
+
+      <div class="w-full bg-purple-950/90 border-2 border-pink-500 rounded-lg p-3 sm:p-4 text-left flex-grow flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-arcade neon-pink block mb-1">RETO DE MEMORIZACIÓN</span>
+          <h3 id="quiz-question" class="text-xs sm:text-base text-yellow-300 font-semibold leading-relaxed mb-2">
+            Cargando preguntas...
+          </h3>
+        </div>
+
+        <div id="quiz-options" class="grid grid-cols-1 gap-2 my-2"></div>
+
+        <button id="btn-back-schema" class="bg-purple-900 border border-cyan-400 text-cyan-300 w-full py-2 text-xs rounded font-medium cursor-pointer mt-1">
+          <i class="fa-solid fa-arrow-left mr-1"></i> Volver a estudiar el esquema
+        </button>
+      </div>
+    </section>
+
+    <!-- MODAL DE FEEDBACK PREGUNTA -->
+    <div id="feedback-modal" class="hidden absolute inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div class="w-full max-w-md bg-purple-950 border-4 border-cyan-400 rounded-lg p-5 text-left relative shadow-[0_0_30px_#00f6ff]">
+        <div class="flex items-center gap-3 mb-3 pb-2 border-b-2 border-pink-500">
+          <span id="feedback-icon" class="text-4xl">💡</span>
+          <h3 id="feedback-status" class="text-base text-yellow-300 font-bold font-arcade">RESULTADO</h3>
+        </div>
+        <p id="feedback-text" class="text-xs sm:text-sm text-gray-100 leading-relaxed font-normal mb-4">
+          Explicación del resultado...
+        </p>
+        <button id="btn-next-question" class="btn-arcade w-full py-3 text-xs sm:text-sm rounded cursor-pointer">
+          SIGUIENTE PREGUNTA <i class="fa-solid fa-forward ml-1"></i>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Control de desplegables (Acordeón interactivo)
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetId = btn.getAttribute('data-target');
+        const targetEl = document.getElementById(targetId);
+        const icon = btn.querySelector('.icon-arrow');
+
+        if (targetEl.classList.contains('hidden')) {
+          targetEl.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        } else {
+          targetEl.classList.add('hidden');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+
+    // Control de Cambio de Vista
+    const viewSchema = document.getElementById('view-schema');
+    const viewQuiz = document.getElementById('view-quiz');
+    const navSchema = document.getElementById('nav-schema');
+    const navQuiz = document.getElementById('nav-quiz');
+
+    function showSchema() {
+      viewQuiz.classList.add('hidden');
+      viewSchema.classList.remove('hidden');
+    }
+
+    function showQuiz() {
+      viewSchema.classList.add('hidden');
+      viewQuiz.classList.remove('hidden');
+      if (questions.length === 0) {
+        loadQuestions();
+      } else {
+        renderCurrentQuestion();
+      }
+    }
+
+    navSchema.addEventListener('click', showSchema);
+    navQuiz.addEventListener('click', showQuiz);
+    document.getElementById('btn-start-quiz').addEventListener('click', showQuiz);
+    document.getElementById('btn-back-schema').addEventListener('click', showSchema);
+
+    // Banco de Preguntas por Defecto (Seguridad por si preguntas.json no está creado aún)
+    let questions = [
+      {
+        pregunta: "¿De qué gran división del Sistema Nervioso depende el Encéfalo?",
+        opciones: [
+          { texto: "Del Sistema Nervioso Central (SNC).", correcta: true, explicacion: "¡Correcto! El encéfalo forma parte principal del SNC." },
+          { texto: "Del Sistema Nervioso Periférico (SNP).", correcta: false, explicacion: "El SNP engloba los nervios periféricos, no el encéfalo." },
+          { texto: "Del Sistema Autónomo Simpático.", correcta: false, explicacion: "El simpático regula funciones involuntarias corporales." }
+        ]
+      },
+      {
+        pregunta: "¿Cuántos pares de nervios craneales forman parte del Sistema Nervioso Periférico?",
+        opciones: [
+          { texto: "12 pares.", correcta: true, explicacion: "¡Correcto! Son 12 pares de nervios craneales que emergen del encéfalo." },
+          { texto: "31 pares.", correcta: false, explicacion: "31 pares corresponden a los nervios espinales o raquídeos." },
+          { texto: "50 pares.", correcta: false, explicacion: "La cifra exacta es de 12 pares craneales y 31 espinales." }
+        ]
+      }
+    ];
+    let currentQuestionIdx = 0;
+
+    async function loadQuestions() {
+      try {
+        const response = await fetch('preguntas.json');
+        if (response.ok) {
+          const data = await response.json();
+          if (data && data.length > 0) {
+            questions = data;
+          }
+        }
+      } catch (error) {
+        console.log('Usando preguntas locales de respaldo.');
+      }
+      currentQuestionIdx = 0;
+      renderCurrentQuestion();
+    }
+
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function renderCurrentQuestion() {
+      if (questions.length === 0) return;
+
+      const qData = questions[currentQuestionIdx];
+      document.getElementById('quiz-counter').textContent = `${currentQuestionIdx + 1} / ${questions.length}`;
+      document.getElementById('quiz-question').textContent = qData.pregunta;
+
+      const container = document.getElementById('quiz-options');
+      container.innerHTML = '';
+
+      const shuffledOptions = shuffleArray(qData.opciones);
+      const labels = ['A', 'B', 'C'];
+
+      shuffledOptions.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-option w-full p-3 text-left rounded text-xs sm:text-sm text-gray-100 font-medium cursor-pointer leading-relaxed';
+        btn.innerHTML = `<span class="text-yellow-300 font-bold font-arcade mr-1.5">${labels[idx]})</span> ${opt.texto}`;
+        btn.addEventListener('click', () => {
+          handleAnswer(opt.correcta, opt.explicacion);
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    function handleAnswer(correct, reason) {
+      const modal = document.getElementById('feedback-modal');
+      const feedbackIcon = document.getElementById('feedback-icon');
+      const feedbackStatus = document.getElementById('feedback-status');
+      const feedbackText = document.getElementById('feedback-text');
+
+      feedbackText.textContent = reason;
+      if (correct) {
+        feedbackIcon.textContent = "✅";
+        feedbackStatus.textContent = "¡CORRECTO!";
+        feedbackStatus.className = "text-base text-green-400 font-bold font-arcade";
+      } else {
+        feedbackIcon.textContent = "⚠️";
+        feedbackStatus.textContent = "¡INCORRECTO!";
+        feedbackStatus.className = "text-base text-red-400 font-bold font-arcade";
+      }
+      modal.classList.remove('hidden');
+    }
+
+    document.getElementById('btn-next-question').addEventListener('click', () => {
+      document.getElementById('feedback-modal').classList.add('hidden');
+      currentQuestionIdx = (currentQuestionIdx + 1) % questions.length;
+      renderCurrentQuestion();
+    });
+  </script>
+</body>
+</html>
