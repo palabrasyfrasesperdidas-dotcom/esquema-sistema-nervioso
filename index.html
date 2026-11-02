@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Fase 2: Esquema del Sistema Nervioso (APSD)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Arcade e Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #080014;
+      color: #ffffff;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      overflow-x: hidden;
+    }
+
+    .font-arcade {
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .crt-container {
+      border: 4px solid #00f6ff;
+      box-shadow: 0 0 20px #00f6ff, inset 0 0 15px rgba(0, 246, 255, 0.3), 0 0 35px #ff007f;
+      border-radius: 12px;
+      background: radial-gradient(circle, #160033 0%, #050010 100%);
+    }
+
+    .neon-pink {
+      color: #ff007f;
+      text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f;
+    }
+
+    .neon-cyan {
+      color: #00f6ff;
+      text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff;
+    }
+
+    .neon-yellow {
+      color: #ffe600;
+      text-shadow: 0 0 5px #ffe600;
+    }
+
+    .btn-arcade {
+      background: linear-gradient(180deg, #ff007f 0%, #99004d 100%);
+      border: 3px solid #ffe600;
+      color: #ffffff;
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 2px 2px #000;
+      box-shadow: 0 5px 0 #4d0026, 0 0 15px rgba(255, 0, 127, 0.6);
+      transition: all 0.1s ease;
+    }
+
+    .btn-arcade:active {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 #4d0026;
+    }
+
+    .card-node {
+      background: #13032b;
+      border: 2px solid #00f6ff;
+      box-shadow: 0 0 10px rgba(0, 246, 255, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .card-node:active, .card-node:hover {
+      border-color: #ffe600;
+      box-shadow: 0 0 15px #ffe600;
+    }
+
+    .btn-option {
+      background: #180638;
+      border: 2px solid #00f6ff;
+      transition: all 0.2s ease;
+    }
+
+    .btn-option:hover, .btn-option:active {
+      border-color: #ffe600;
+      background:
